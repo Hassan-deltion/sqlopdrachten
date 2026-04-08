@@ -6,8 +6,17 @@ Theorie kun je vinden op: https://www.edutorial.nl/dbq/introductie/
 
 ### Queries flitspaal
 * Welke cameras zijn er en waar staan ze (id, address, city, max_speed).
+SELECT 
+    id,
+    address,
+    city,
+    max_speed
+FROM cameras;
 
 * Overzicht van boetes op 50km wegen
+SELECT id AS boete_id, speed_limit, speed_excess, fine, created_at FROM fines WHERE speed_limit = 50;
+
+![alt text](image.png)
 
 * Overzicht van overtredingen van 1 kenteken.
 
